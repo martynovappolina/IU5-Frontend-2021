@@ -17,9 +17,9 @@ function getMinMax(str) {
     //             new_str += space;
     //     }
     // }
-
     // new_str.split(' ').map(parseInt);
-    str.split(/\D+(?!$)/).map(parseFloat);
+
+    str.split(/\D/).map(parseInt);
     return 'min: ' + Math.min(new_str) + ', max: ' + Math.max(new_str)
 
 }
