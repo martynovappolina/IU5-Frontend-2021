@@ -10,7 +10,7 @@
 function prettySum(arr) {
     let n = 0;
     for (let i in arr) {
-        if (i % 2 == 1) n += arr[i];
+        if (i % 2 == 0) n += arr[i];
     }
     n *= arr[arr.length - 1];
     return n
