@@ -13,7 +13,7 @@ function getMinMax(str) {
     for (let i in str) {
         if (parseInt(str[i])) {
             new_str = new_str + str[i]
-            if (str[i + 1] == ' ' || str[i + 1] == '')
+            if (!parseInt(str[i + 1]))
                 new_str += space;
         }
     }
