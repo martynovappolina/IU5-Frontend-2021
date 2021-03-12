@@ -11,8 +11,8 @@ function getMinMax(str) {
     let new_str = '';
     let space = ' ';
     for (let i in str) {
-        if (parseInt(el[index])) {
-            new_str = new_str + el[index]
+        if (parseInt(str[i])) {
+            new_str = new_str + str[i]
             if (str[i + 1] == ' ' || str[i + 1] == '')
                 new_str += space;
         }
