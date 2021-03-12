@@ -13,7 +13,7 @@ function prettySum(arr) {
         if (i % 2 == 1) n += arr[i];
     }
     n *= arr[arr.length - 1];
-    return arr
+    return n
 }
 
 module.exports = prettySum;

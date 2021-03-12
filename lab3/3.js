@@ -9,7 +9,7 @@
 
 function multiplyArray(arr, n) {
     for (let i in arr) {
-        if (parseInt(str[i])) arr[i] *= n;
+        if (parseInt(arr[i])) arr[i] *= n;
     }
     return arr
 }
