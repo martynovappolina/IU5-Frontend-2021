@@ -8,7 +8,10 @@
  */
 
 function multiplyArray(arr, n) {
-    // code here
+    for (let i in arr) {
+        if (parseInt(str[i])) arr[i] *= n;
+    }
+    return arr
 }
 
 module.exports = multiplyArray;
