@@ -19,7 +19,7 @@ function getMinMax(str) {
     // }
     // new_str.split(' ').map(parseFloat);
 
-    str.match(/-\d+(\.\d+)+\d+/).map(parseFloat);
+    str.match(/\d/).map(parseFloat);
     return 'min: ' + Math.min(str) + ', max: ' + Math.max(str)
 
 }
