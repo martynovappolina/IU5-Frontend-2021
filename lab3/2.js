@@ -19,7 +19,9 @@ function getMinMax(str) {
     // }
     // new_str.split(' ').map(parseFloat);
 
-    str.split(' ').map(parseFloat);
+    // str.split(' ').map(parseFloat);
+    str.split(' ');
+    for (let i in str) parseFloat(str[i]);
     return 'max: ' + Math.max(str) + ', min: ' + Math.min(str)
 
 }
