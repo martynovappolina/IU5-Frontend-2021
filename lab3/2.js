@@ -21,7 +21,10 @@ function getMinMax(str) {
 
     // str.split(' ').map(parseFloat);
     str.split(' ');
-    for (let i in str) parseFloat(str[i]);
+    for (let i in str) {
+        parseFloat(str[i]);
+        isNaN(str[i]);
+    }
     return 'max: ' + Math.max(str) + ', min: ' + Math.min(str)
 
 }
