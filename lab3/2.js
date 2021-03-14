@@ -23,9 +23,9 @@ function getMinMax(str) {
     str.split(' ');
     for (let i in str) {
         parseFloat(str[i]);
-        if (!isNaN(str[i])) delete str[i];
+        if (isNaN(str[i])) delete str[i];
     }
-    return '"max": ' + Math.max(str) + ', "min": ' + Math.min(str)
+    return 'max: ' + Math.max(str) + ', min: ' + Math.min(str)
 
 }
 
