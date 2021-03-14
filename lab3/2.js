@@ -20,12 +20,13 @@ function getMinMax(str) {
     // new_str.split(' ').map(parseFloat);
 
     // str.split(' ').map(parseFloat);
-    let arr = str.split(' ');
-    for (let i in str) {
-        parseFloat(str[i]);
-        if (isNaN(str[i])) delete str[i];
-    }
-    return { max: Math.max(...arr), min: Math.min(...arr) }
+    // let arr = str.split(' ');
+    // for (let i in str) {
+    //     parseFloat(str[i]);
+    //     if (isNaN(str[i])) delete str[i];
+    // }
+    let arr = str.split(' ').map(e => parseFloat(e)).filter(e => !isNaN(e));
+    return { max: Math.max(...arr), min: Math.min(...arr) };
 
 }
 
