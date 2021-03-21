@@ -17,8 +17,18 @@
 */
 
 function get1DArray(arr) {
-    let new_arr = [];
-    return new_arr.concat(arr);
+    let new_arr = "";
+    // for (let i in arr) {
+    //     new_arr = new_arr.concat(arr[i]);
+    // }
+    new_arr = new_arr.concat(arr);
+    new_arr = new_arr.split(',');
+    for (let i in new_arr) {
+        if (parseInt(new_arr[i]))
+            new_arr[i] = parseInt(new_arr[i]);
+    }
+
+    return new_arr;
 }
 
 module.exports = get1DArray;
