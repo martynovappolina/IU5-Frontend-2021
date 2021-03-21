@@ -50,8 +50,8 @@ test('prettySum 3', () => {
 
 test('prettySum 4', () => {
     expect(prettySum([-4, -1, 3, 5])).toBe(-5);
-<<<<<<< HEAD
+    // <<<<<<< HEAD
 });
-=======
-});
->>>>>>> df01eb32992f53f7e6040fd451fb680593d71a42
+// =======
+// });
+// >>>>>>> df01eb32992f53f7e6040fd451fb680593d71a42
