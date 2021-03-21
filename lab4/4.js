@@ -17,7 +17,7 @@
 */
 
 function get1DArray(arr) {
-    let new_arr = "";
+    let new_arr = [];
     return new_arr.concat(arr);
 }
 
