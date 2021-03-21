@@ -28,6 +28,8 @@ function get1DArray(arr) {
             new_arr[i] = parseInt(new_arr[i]);
     }
 
+    if (new_arr == "") new_arr = [];
+
     return new_arr;
 }
 
