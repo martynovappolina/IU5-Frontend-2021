@@ -13,7 +13,12 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "start": "node server.js",
         "test-lab-3": "jest lab3.test.js",
+<<<<<<< HEAD
         "test-lab-4": "jest lab4.test.js"
+=======
+        "test-lab-4": "jest lab4.test.js",
+        "test-lab-5": "jest lab5.test.js"
+>>>>>>> a0b73307a2c2795385448c8e487d8ceda5940223
     },
     "author": "",
     "license": "ISC"

@@ -10,6 +10,7 @@
  */
 
 function checkBrackets(str) {
+
     let a = true;
     let n = 0,
         m;
@@ -64,5 +65,11 @@ function checkBrackets(str) {
     if ((number_brackets[0] + number_brackets[1] + number_brackets[2]) != (number_brackets[3] + number_brackets[4] + number_brackets[5])) a = false;
     return a;
 }
+
+module.exports = checkBrackets;
+
+//code here
+
+
 
 module.exports = checkBrackets;

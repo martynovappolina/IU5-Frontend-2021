@@ -6,6 +6,7 @@
  * ['мир', 'Рим', 'сирота', 'Ариост', 'мри', 'пва', 'лор', 'авп']; -> [["мир", "Рим", "мри"], ["сирота", "Ариост"], ["пва", "авп"]]
  */
 function getAnagramms(arr) {
+
     let arr1 = [];
     for (let i in arr) {
         arr1[i] = arr[i].toLowerCase().split("").sort().join("");
@@ -48,5 +49,10 @@ function getAnagramms(arr) {
     //     }
     // }
 }
+
+module.exports = getAnagramms;
+
+//code here
+
 
 module.exports = getAnagramms;
