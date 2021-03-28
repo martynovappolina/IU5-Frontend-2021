@@ -16,7 +16,7 @@
 function memoize(func) {
     let cache = {};
     return function(value) {
-        if (cache[value] !== undefined) return { cache: true, result: value };
+        if (cache[value] !== undefined) return { cache: true, result: cache[value] };
         else {
             const r = func(value);
             cache[value] = r;
