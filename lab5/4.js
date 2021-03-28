@@ -16,8 +16,8 @@ let value = 0;
 
 function memoize(func) {
     return function new_f(...args) {
-        if (value == func(...args)) return value;
-        else return func(...args);
+        if (value == func(...args)) return { cache: true, result: value };
+        else return { cache: false, result: func(...args) };
         value = func(...args);
     }
 }
