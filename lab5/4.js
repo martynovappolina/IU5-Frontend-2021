@@ -14,16 +14,27 @@
  */
 
 function memoize(func) {
-    let cache = {};
+    let c;
+    let fc;
     return function(value) {
-        if (cache[value] !== undefined) return { cache: true, result: cache[value] };
+        if (c == value) return { cache: true, result: fc };
         else {
-            const r = func(value);
-            cache[value] = r;
-            return { cache: false, result: r };
+            fc = func(value);
+            c = value;
+            return { cache: false, result: fc };
         }
     }
 }
+
+// let cache = {};
+// return function(value) {
+//     if (cache[value] !== undefined) return { cache: true, result: cache[value] };
+//     else {
+//         const r = func(value);
+//         cache[value] = r;
+//         return { cache: false, result: r };
+//     }
+// }
 
 // return function new_f(...args) {
 //     if (value == func(...args)) return { cache: true, result: value };
