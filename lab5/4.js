@@ -12,14 +12,23 @@
  * memozedAdd(2) -> {cache: false, result: 4}
  * memozedAdd(2) -> {cache: true, result: 4}
  */
-let value = 0;
 
 function memoize(func) {
-    return function new_f(...args) {
-        if (value == func(...args)) return { cache: true, result: value };
-        else return { cache: false, result: func(...args) };
-        value = func(...args);
+    let cache = {};
+    return function(value) {
+        if (cache[value] !== undefined) return { cache: true, result: value };
+        else {
+            const r = func(value);
+            cache[value] = r;
+            return { cache: false, result: r };
+        }
     }
 }
+
+// return function new_f(...args) {
+//     if (value == func(...args)) return { cache: true, result: value };
+//     else return { cache: false, result: func(...args) };
+//     value = func(...args);
+// }
 
 module.exports = memoize;
