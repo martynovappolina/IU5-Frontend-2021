@@ -26,20 +26,5 @@ function memoize(func) {
     }
 }
 
-// let cache = {};
-// return function(value) {
-//     if (cache[value] !== undefined) return { cache: true, result: cache[value] };
-//     else {
-//         const r = func(value);
-//         cache[value] = r;
-//         return { cache: false, result: r };
-//     }
-// }
-
-// return function new_f(...args) {
-//     if (value == func(...args)) return { cache: true, result: value };
-//     else return { cache: false, result: func(...args) };
-//     value = func(...args);
-// }
 
 module.exports = memoize;

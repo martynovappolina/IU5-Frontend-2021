@@ -10,15 +10,7 @@
 
 
 Array.prototype.myMap = function(reducer) {
-    let new_arr = [];
-    for (let i = 0; i < this.length; i++) {
-        let el = reducer(this[i]);
-        new_arr.push(el);
-    }
-    return new_arr;
+    return this.reduce(function(previousValue, currentValue, index) {
+        return previousValue.concat([reducer(currentValue, index, this)]);
+    }, []);
 }
-
-// this.forEach(element => {
-//     element.reducer(element);
-// });
-// return this;
