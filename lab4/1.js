@@ -21,8 +21,7 @@ function getAnagramms(arr) {
 
     return Object.values(result);
 }
-
-// module.exports = getAnagramms;
+module.exports = getAnagramms;
 
 // //code here
 

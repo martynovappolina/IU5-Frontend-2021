@@ -23,7 +23,7 @@ function rle(str) {
     return new_str;
 }
 
-// module.exports = rle;
+module.exports = rle;
 
 // //code here
 

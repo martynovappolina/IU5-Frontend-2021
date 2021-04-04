@@ -34,7 +34,7 @@ function get1DArray(arr) {
     return new_arr;
 }
 
-// module.exports = get1DArray;
+module.exports = get1DArray;
 
 // //code here
 
