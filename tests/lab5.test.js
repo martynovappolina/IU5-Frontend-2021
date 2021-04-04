@@ -63,6 +63,7 @@ test('memoize 6', () => {
 });
 
 
+
 // test('makeRoute', () => {
 //     expect(makeRoute([
 //         { from: 'L', to: 'M' },
@@ -80,3 +81,21 @@ test('memoize 6', () => {
 //         ]
 //     );
 // });
+
+test('makeRoute', () => {
+    expect(makeRoute([
+        { from: 'L', to: 'M' },
+        { from: 'M', to: 'N' },
+        { from: 'A', to: 'L' },
+        { from: 'B', to: 'A' },
+        { from: 'N', to: 'Z' },
+    ])).toEqual(
+        [
+            { from: "B", to: "A" },
+            { from: "A", to: "L" },
+            { from: "L", to: "M" },
+            { from: "M", to: "N" },
+            { from: "N", to: "Z" }
+        ]
+    );
+});
