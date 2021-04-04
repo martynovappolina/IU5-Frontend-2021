@@ -63,7 +63,6 @@ test('memoize 6', () => {
 });
 
 
-
 // test('makeRoute', () => {
 //     expect(makeRoute([
 //         { from: 'L', to: 'M' },

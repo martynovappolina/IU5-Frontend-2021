@@ -10,7 +10,8 @@
 function customBind(f, context) {
     return function new_f(...args) {
         return f.apply(context, args);
-    };
+    }
+}
 
 
-    module.exports = customBind;
+module.exports = customBind;
