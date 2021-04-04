@@ -8,6 +8,7 @@
  */
 
 function rle(str) {
+
     let n = 1;
     let new_str = "";
     for (let i = 0; i < str.length; i++) {
@@ -21,5 +22,10 @@ function rle(str) {
     }
     return new_str;
 }
+
+module.exports = rle;
+
+//code here
+
 
 module.exports = rle;

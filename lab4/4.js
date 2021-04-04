@@ -17,6 +17,7 @@
 */
 
 function get1DArray(arr) {
+
     let new_arr = "";
     // for (let i in arr) {
     //     new_arr = new_arr.concat(arr[i]);
@@ -32,5 +33,10 @@ function get1DArray(arr) {
 
     return new_arr;
 }
+
+module.exports = get1DArray;
+
+//code here
+
 
 module.exports = get1DArray;
