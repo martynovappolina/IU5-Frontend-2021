@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>lab6</title>
+</head>
+
+<body>
+    <style>
+        #task {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-size: 15pt;
+        }
+    </style>
+
+    <script>
+        function randColor(Element) {
+            let r = Math.floor(Math.random() * (256)),
+                g = Math.floor(Math.random() * (256)),
+                b = Math.floor(Math.random() * (256));
+            let RandomColor = '#' + r.toString(16) + g.toString(16) + b.toString(16);
+            Element.style.background = RandomColor;
+            return false;
+        }
+
+        let sec = 1;
+        let Timer;
+
+        function RunTimer() {
+            Timer = setInterval(tick, 1000);
+        }
+
+        function tick() {
+            document.getElementById("timer").childNodes[0].nodeValue = sec;
+            sec++
+        }
+    </script>
+
+    <div id="task">
+        Задание 1:
+    </div>
+
+    <div style="width: 200px; height: 200px; background: blueviolet;" onclick="return randColor(this)"></div>
+
+    <div id="task">
+        <br>Задание 2:
+    </div>
+
+    <div id="timer" style="width: 20px; height: 30px; font-size: 30px;" onmouseover="RunTimer()" onmouseout="clearInterval(Timer)">
+        0
+    </div>
+
+    <div id="task">
+        <br>Задание 3:
+    </div>
+
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+    <div class="dropdown">
+        <div data-uk-dropdown="{mode:'click'}">
+
+        </div>
+        <button onclick="myFunction()" class="dropbtn">Month</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">January</a>
+            <a href="#">February</a>
+            <a href="#">March</a>
+            <a href="#">April</a>
+            <a href="#">May</a>
+            <a href="#">June</a>
+            <a href="#">July</a>
+            <a href="#">August</a>
+            <a href="#">September</a>
+            <a href="#">October</a>
+            <a href="#">November</a>
+            <a href="#">December</a>
+        </div>
+    </div>
+
+    <div id="task">
+        <br>Задание 4:
+    </div>
+
+    <script>
+        let x, y, a;
+
+        function MoveCircle() {
+            a = true;
+            document.addEventListener('mousemove', e => {
+                if (e.pageX < 782 && e.pageX > 8 &&
+                    e.pageY < 1205 && e.pageY > 432) {
+                    if (a) {
+                        circle.style.left = e.pageX + "px";
+                        x = e.pageX;
+                        circle.style.top = e.pageY + "px";
+                        y = e.pageY;
+                    }
+                }
+            });
+
+            document.addEventListener('keydown', function(e) {
+                const key = e.key;
+                if (key === "Escape") {
+                    circle.style.left = x + "px";
+                    circle.style.top = y + "px";
+                    a = false;
+                }
+            });
+
+        }
+    </script>
+
+    <div id="ContainerForCircle">
+        <div id="circle" onclick="MoveCircle()"></div>
+    </div>
+
+
+</body>
+
+</html>

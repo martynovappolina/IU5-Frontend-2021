@@ -7,6 +7,7 @@
  */
 function getAnagramms(arr) {
 
+
     let arr1 = [];
     for (let i in arr) {
         arr1[i] = arr[i].toLowerCase().split("").sort().join("");
@@ -19,40 +20,15 @@ function getAnagramms(arr) {
     }
 
     return Object.values(result);
-
-    // let obj = new Object();
-    // for (let i in arr) {
-    //     let obj = {
-    //         id: i,
-    //         word: arr[i].toLowerCase().split("").sort().join(""),
-    //     }
-    //     arr1[i] = obj;
-    // }
-
-    // for (let i in arr) {
-    //     arr1[i] = arr[i].toLowerCase().split("").sort().join("");
-    // }
-    // let a = true;
-    // let n = 0;
-    // let arr_index;
-    // for (let i = 0; i < arr1.length() - 1; i++) {
-    //     arr_index[n] = i;
-    //     n++;
-    //     for (let j = 1; j < arr1.length(); j++) {
-    //         for (let k in arr1[i]) {
-    //             if (arr1[i][k] != arr1[j][k]) a = false
-    //         }
-    //         if (a) {
-    //             arr_index[n] = j;
-    //             delete(arr1[j]);
-    //         }
-    //     }
-    // }
 }
-
 module.exports = getAnagramms;
 
-//code here
+// //code here
 
 
-module.exports = getAnagramms;
+// module.exports = getAnagramms;
+
+// //code here
+
+
+// module.exports = getAnagramms;
