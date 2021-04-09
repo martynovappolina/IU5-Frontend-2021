@@ -4,6 +4,7 @@
  * выходные данные - функция с прибинженым контекстом
  * Примеры:
 
+
  * customBind(function() {this.a + this.b}, {a: 1, b: 2})() -> 3
  */
 
@@ -12,6 +13,7 @@ function customBind(f, context) {
         return f.apply(context, args);
     }
 }
+
 
 
 module.exports = customBind;

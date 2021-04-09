@@ -8,6 +8,7 @@
 function getAnagramms(arr) {
 
 
+
     let arr1 = [];
     for (let i in arr) {
         arr1[i] = arr[i].toLowerCase().split("").sort().join("");
@@ -22,13 +23,3 @@ function getAnagramms(arr) {
     return Object.values(result);
 }
 module.exports = getAnagramms;
-
-// //code here
-
-
-// module.exports = getAnagramms;
-
-// //code here
-
-
-// module.exports = getAnagramms;

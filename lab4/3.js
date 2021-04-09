@@ -7,7 +7,8 @@
  * rle('BCCADDEEEBB') === 'BC2AD2E3B2'
  */
 
-function rle(str) {
+function rle(str) { <<
+    << << < HEAD
 
     let n = 1;
     let new_str = "";
@@ -24,13 +25,3 @@ function rle(str) {
 }
 
 module.exports = rle;
-
-// //code here
-
-
-// module.exports = rle;
-
-//     //code here
-
-
-// module.exports = rle;

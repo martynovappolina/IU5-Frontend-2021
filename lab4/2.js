@@ -8,6 +8,7 @@
  */
 function isPalindrome(str) {
 
+
     let a = true;
     let str1 = str.toLowerCase().split("");
     let str2 = str.toLowerCase().split("");
@@ -21,13 +22,3 @@ function isPalindrome(str) {
 }
 
 module.exports = isPalindrome;
-
-// //code here
-
-
-// module.exports = isPalindrome;
-
-//     //code here
-// }
-
-// module.exports = isPalindrome;
