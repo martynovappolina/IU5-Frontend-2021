@@ -7,9 +7,7 @@
  * rle('BCCADDEEEBB') === 'BC2AD2E3B2'
  */
 
-function rle(str) { <<
-    << << < HEAD
-
+function rle(str) {
     let n = 1;
     let new_str = "";
     for (let i = 0; i < str.length; i++) {

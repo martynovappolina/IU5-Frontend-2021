@@ -26,7 +26,7 @@ function curry(f) {
             }
         }
     };
+}
 
 
-
-    module.exports = curry;
+module.exports = curry;
