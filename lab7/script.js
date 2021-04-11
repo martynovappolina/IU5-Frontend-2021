@@ -11,17 +11,6 @@ function main() {
         document.querySelector('.wind').innerHTML = res.data.wind.speed + "м/с"
         document.querySelector('.pressure').innerHTML = Math.round(res.data.main.pressure * 0.75) + "мм рт. ст."
 
-        // document.querySelector('.dateh1').innerHTML = res.dt;
-        // document.querySelector('.temperatureh1').innerHTML = (Math.round(res.data.main.temp) >= 0 ? "+" + Math.round(res.data.main.temp) : Math.round(res.data.main.temp)) + "°"
-        // document.querySelector('.conditionh1').innerHTML = res.data.weather[0].description[0].toUpperCase() + res.data.weather[0].description.slice(1)
-
-
-        // document.querySelector('.temperatureh2').innerHTML = (Math.round(res.data.main.temp) >= 0 ? "+" + Math.round(res.data.main.temp) : Math.round(res.data.main.temp)) + "°"
-        // document.querySelector('.conditionh2').innerHTML = res.data.weather[0].description[0].toUpperCase() + res.data.weather[0].description.slice(1)
-
-        // document.querySelector('.temperatureh3').innerHTML = (Math.round(res.data.main.temp) >= 0 ? "+" + Math.round(res.data.main.temp) : Math.round(res.data.main.temp)) + "°"
-        // document.querySelector('.conditionh3').innerHTML = res.data.weather[0].description[0].toUpperCase() + res.data.weather[0].description.slice(1)
-
 
     })
 
