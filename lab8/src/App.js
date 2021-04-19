@@ -77,7 +77,7 @@ class App extends Component {
         description = {item.description}
         completed = {item.completed}
         hchange = {() => {this.hchange(item.id)}}
-        onEdit = {this.onEdit}
+        onEdit = {() => {this.onEdit(item.id)}}
         />
       )
     })

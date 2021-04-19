@@ -1,3 +1,4 @@
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# Лаборатоная 8
+выполнить задачу описанную ниже в папке lab8, проверить корректность работы на верселе, заполнить отчет
+# ВАЖНО!
+# перед коммитом сделать npm run build, чтоб можно было посмотреть на верселе
+
+## Задание:
+1. Сделать приложение тудушек (можно вдохновиться приложением todoist)
+2. Требование к функционалу:
+3. динамическое количество строк с чекбоксами и надписями
+4. кнопка "добавить", которая добавляет новую строку с чекбоксом и надписью
+5. все надписи должны быть редактируемые
+6. все чекбоксы должны нажиматься
+7. пример того, как оно должно выглядеть лежит в папке public
+
+>>>>>>> upstream/master
