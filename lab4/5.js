@@ -11,6 +11,7 @@
 
 function checkBrackets(str) {
 
+
     let a = true;
     let n = 0,
         m;
@@ -67,15 +68,3 @@ function checkBrackets(str) {
 }
 
 module.exports = checkBrackets;
-
-// //code here
-
-
-
-// module.exports = checkBrackets;
-
-//     //code here
-
-
-
-// module.exports = checkBrackets;

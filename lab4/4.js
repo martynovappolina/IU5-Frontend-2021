@@ -35,12 +35,3 @@ function get1DArray(arr) {
 }
 
 module.exports = get1DArray;
-
-// //code here
-
-
-// module.exports = get1DArray;
-
-//     //code here
-
-// module.exports = get1DArray;

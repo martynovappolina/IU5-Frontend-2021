@@ -15,6 +15,7 @@
 
 function memoize(func) {
 
+
     let c;
     let fc;
     return function(value) {
@@ -26,10 +27,6 @@ function memoize(func) {
         }
     }
 }
-
-
-
-
 
 
 module.exports = memoize;
